@@ -1,0 +1,219 @@
+.burgers {
+  font-size: 0;
+  background: #f9b43b;
+  background: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background: ( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+
+  &__container {
+    @extend %vertical-middle;
+  }
+
+  &__slider {
+    position: relative;
+
+    &__btn {
+      display: block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 5;
+
+      &_left {
+        left: -40px;
+
+        [src$=".svg"] {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+
+      &_right {
+        right: -40px;
+
+        [src$=".svg"] {
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  &__burger {
+    @extend %clearfix;
+    padding-bottom: 90px;
+    position: relative;
+
+    &__ingredients {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background: rgba(227, 80, 40, 0.4);
+      width: 90px;
+      height: 90px;
+      border-radius: 5px;
+      -webkit-transition: .3s;
+      transition: .3s;
+      z-index: 5;
+
+      &:hover {
+        background: $red;
+
+        .burgers__burger__ingredients__dropdown {
+          display: block;
+          opacity: 1;
+        }
+      }
+
+      &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        &__text {
+          color: #fff;
+          font-size: 14px;
+          line-height: 28px;
+          font-family: Gagalin;
+        }
+      }
+
+      &__dropdown {
+        position: absolute;
+        left: 90px;
+        display: none;
+        padding: 20px;
+        background: rgba(#fff, .9);
+        width: 270px;
+        border-radius: 7px;
+        opacity: 0;
+        transition: opacity .3s;
+        z-index: 5;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 30px;
+          left: -29px;
+        }
+      }
+
+      &__table {
+        width: 100%;
+
+        &-cell {
+          vertical-align: middle;
+          padding: 8px 0;
+        }
+
+        &-title, &-weight {
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        &-title {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__weight {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: .5;
+
+      &__sum {
+        background: url("../../img/icons/kkal.svg") 50% no-repeat;
+        width: 65px;
+        height: 60px;
+        position: relative;
+
+        &__number {
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+          font-family: Gagalin;
+        }
+      }
+
+      &__title {
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        font-family: Gagalin;
+      }
+    }
+
+    &__left, &__right {
+      float: left;
+      width: 48.93617021276596%;
+    }
+
+    &__left {
+      padding-top: 95px;
+
+      &__img {
+        display: inline-block;
+        max-width: 100%;
+      }
+    }
+
+    &__right {
+      margin-left: 20px;
+
+      .section__title {
+        color: #fff;
+        line-height: 64px;
+        margin-bottom: 35px;
+      }
+
+      &__text {
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      &__order {
+
+        &__price {
+          display: inline-block;
+          vertical-align: middle;
+          color: $red;
+          font-family: Gagalin;
+
+          &__sum {
+            font-size: 72px;
+          }
+
+          &__step {
+            font-size: 30px;
+          }
+
+          &__sum, &__step {
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 1;
+          }
+        }
+
+        &__link {
+          display: inline-block;
+          vertical-align: bottom;
+          margin-left: 32px;
+        }
+      }
+    }
+  }
+}

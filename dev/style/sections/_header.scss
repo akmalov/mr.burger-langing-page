@@ -1,0 +1,86 @@
+.header {
+  padding-top: 12px;
+
+  &__logo {
+    float: left;
+    width: 9.574468085106383%;
+
+    &__img {
+      display: block;
+      width: 90px;
+      height: 69px;
+    }
+  }
+
+  &__menu {
+    float: right;
+    text-align: right;
+    width: 68.08510638297872%;
+    overflow: hidden;
+    padding-top: 16px;
+  }
+
+  &__nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 82.5%;
+
+    &__list {
+      width: 100%;
+      @extend %clearfix;
+    }
+
+    &__item {
+      float: left;
+      white-space: nowrap;
+      margin-left: 16px;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        margin-right: 15px;
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+
+      &:first-child {
+        margin-left: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      font-size: 13px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+      overflow: hidden;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__order-link {
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
