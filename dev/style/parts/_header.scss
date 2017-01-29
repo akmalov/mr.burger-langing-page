@@ -1,0 +1,22 @@
+.header {
+  padding-top: 12px;
+
+  &__logo {
+    float: left;
+    width: 9.574468085106383%;
+
+    &-img {
+      display: block;
+      width: 90px;
+      height: 69px;
+    }
+  }
+
+  &__menu {
+    float: right;
+    text-align: right;
+    width: 68.08510638297872%;
+    overflow: hidden;
+    padding-top: 16px;
+  }
+}

@@ -1,5 +1,5 @@
 .intro {
-  background: url('../../img/bg/intro.jpg') center center / cover no-repeat;
+  background: url('../img/bg/intro.jpg') center center / cover no-repeat;
   position: relative;
   font-size: 0;
 
@@ -10,37 +10,33 @@
     &__main {
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50);
+      transform: translateY(-50%);
       left: 0;
       right: 0;
+  }
 
-    &__left, &__right {
-      float: left;
-      width: 50%;
-    }
+  &__left, &__right {
+    float: left;
+    width: 50%;
+  }
 
-    &__left {
+  &__image {
+    display: inline-block;
+    max-width: 100%;
+    margin-left: 10px;
+  }
 
-      &__image {
-        display: inline-block;
-        max-width: 100%;
-        margin-left: 10px;
-      }
-    }
+  &__right {
+    padding-top: 120px;
+  }
 
-    &__right {
-      padding-top: 120px;
-    }
-
-    &__topic__text {
-      font-size: 65px;
-      color: #fff;
-      font-family: Lifehack;
-      font-weight: 500;
-      text-transform: lowercase;
-      line-height: 1em;
-    }
+  &__topic-desc {
+    font-size: 65px;
+    color: #fff;
+    font-family: Lifehack;
+    font-weight: 500;
+    text-transform: lowercase;
+    line-height: 1em;
   }
 }
 
