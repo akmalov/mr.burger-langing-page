@@ -1,84 +1,84 @@
 .menu {
-  background: url('../../img/bg/menu.jpg') 50% / cover no-repeat;
+  background: url('../img/bg/menu.jpg') 50% / cover no-repeat;
   position: relative;
 
-  &__title {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-  }
-
-  &-accordion {
+  &__list {
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
     @extend %clearfix;
+  }
 
-    &__item {
-      float: left;
-      height: 100%;
+  &__item {
+    float: left;
+    height: 100%;
 
-      &.active {
-
-       .menu-accordion__trigger-text {
-          color: $yellow;
-        }
-      }
-    }
-
-    &__trigger {
-      position: relative;
-      width: 80px;
-      display: block;
-      height: 100%;
-      float: left;
-      text-decoration: none;
-      cursor: pointer;
-
-      &-meat {
-        background: url('../../img/bg/meat.jpg') 50% / cover no-repeat;
-      }
-
-      &-vegan {
-        background: url('../../img/bg/vegans.jpg') 50% / cover no-repeat;
-      }
-
-      &-diet {
-        background: url('../../img/bg/diet.jpg') 50% / cover no-repeat;
-      }
-
-      &-text {
-        position: absolute;
-        top: 50%;
-        left: -275px;
-        font-size: 40px;
-        font-family: Gagalin;
-        color: #fff;
-        transform: rotate(-90deg);
-        text-align: center;
-        white-space: nowrap;
-        width: 650px;
-        height: 80px;
-        margin-top: -40px;
-      }
-    }
-
-    &__content {
-      height: 100%;
-      float: left;
-      background: rgba(#2f3234, .93);
-      overflow: hidden;
-      width: 0;
-    }
-
-    &__text {
-      font-family: Ubuntu;
-      font-size: 14px;
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: -275px;
+      font-size: 40px;
+      font-family: Gagalin;
       color: #fff;
-      padding: 60px 30px;
-      width: 550px;
-      line-height: 1.8;
+      transform: rotate(-90deg);
+      text-align: center;
+      white-space: nowrap;
+      width: 650px;
+      height: 80px;
+      margin-top: -40px;
+    }
+
+    &_active {
+
+      .menu__item-title {
+        color: $yellow;
+      }
     }
   }
+
+  &__trigger {
+    position: relative;
+    width: 80px;
+    display: block;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+
+    &_meat {
+      background: url('../img/bg/meat.jpg') 50% / cover no-repeat;
+    }
+
+    &_vegan {
+      background: url('../img/bg/vegans.jpg') 50% / cover no-repeat;
+    }
+
+    &_diet {
+      background: url('../img/bg/diet.jpg') 50% / cover no-repeat;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    float: left;
+    background: rgba(#2f3234, .93);
+    overflow: hidden;
+    width: 0;
+  }
+
+  &__desc {
+    font-family: Ubuntu;
+    font-size: 14px;
+    color: #fff;
+    padding: 60px 30px;
+    width: 550px;
+    line-height: 1.8;
+  }
+}
+
+.section__title_menu {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
