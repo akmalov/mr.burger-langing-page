@@ -1,36 +1,31 @@
 .team {
-  background: url("../../img/bg/team.jpg") 50% / cover no-repeat;
+  background: url("../img/bg/team.jpg") 50% / cover no-repeat;
   position: relative;
 
-  &__section {
+  &__title {
+    margin-bottom: 12%;
+  }
 
-    &__title {
-      margin-bottom: 12%;
-    }
+  &__left, &__right {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
 
-    &__left, &__right {
-      float: left;
-      width: 50%;
-      height: 100%;
-    }
+  &__left {
+    float: left;
+  }
 
-    &__left {
-      float: left;
-    }
-
-    &__right {
-      float: right;
-      background: rgba(#2f3234, .93);
-      padding: 5% 2% 0 7%;
-    }
+  &__right {
+    float: right;
+    background: rgba(#2f3234, .93);
+    padding: 5% 2% 0 7%;
   }
 
   &__item {
     margin-bottom: 40px;
 
-    &.active {
-
-
+    &_active {
 
       .team__name {
         color: $yellow;
@@ -89,35 +84,35 @@
     float: left;
     text-align: center;
     width: 30%;
+  }
 
-    &__img {
-      display: inline-block;
-      vertical-align: top;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: url('../../img/content/teammate.jpg') center center / cover no-repeat;
-    }
+  &__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url('../img/content/teammate.jpg') center center / cover no-repeat;
   }
 
   &__description {
     float: left;
     width: 70%;
+  }
 
-    &__work {
-      font-family: Ubuntu;
-      font-weight: 700;
-      font-size: 14px;
-      color: #fff;
-      margin-bottom: 14px;
-    }
+  &__work {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 14px;
+  }
 
-    &__text {
-      font-family: Ubuntu;
-      color: #fff;
-      font-size: 14px;
-    }
+  &__text {
+    font-family: Ubuntu;
+    color: #fff;
+    font-size: 14px;
   }
 }
 
