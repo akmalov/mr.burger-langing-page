@@ -60,33 +60,14 @@ body {
 .section {
   height: 100vh;
   min-height: 650px;
-}
 
-.button {
-  display: inline-block;
-  font-size: 13px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  font-family: Ubuntu;
-  font-weight: 500;
-  color: #fff;
-  background: $orange;
-  padding: 3px 16px;
-  border-radius: 5px;
-
-  &:hover {
-    background: darken($orange, 10%);
+  &__title {
+    color: $yellow;
+    font-size: 72px;
+    font-family: Gagalin;
+    margin-bottom: 12px;
+    overflow: hidden;
   }
-}
-
-.section__title {
-  color: $yellow;
-  font-size: 72px;
-  font-family: Gagalin;
-  margin-bottom: 12px;
-  overflow: hidden;
 }
 
 .text-block {
@@ -96,117 +77,6 @@ body {
     font-size: 14px;
     line-height: 1.8;
   }
-}
-
-.fixed-menu {
-  position: fixed;
-  top: 90px;
-  right: 40px;
-
-  &__item {
-    margin-bottom: 5px;
-
-    &.active {
-      .fixed-menu__link {
-        &:before {
-          width: 14px;
-          height: 14px;
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-  &__link {
-    width: 16px;
-    height: 16px;
-    display: block;
-    position: relative;
-
-    &:after, &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-
-    &:before {
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      border: 1px solid #fff;
-      opacity: 0;
-      transition: .3s;
-    }
-
-    &:after {
-      width: 6px;
-      height: 6px;
-      background: #fff;
-    }
-
-    &:hover:before {
-      width: 14px;
-      height: 14px;
-      opacity: 1;
-    }
-  }
-}
-
-.full-review {
-  position: relative;
-  padding: 25px 20px;
-
-
-  &__close {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: block;
-    width: 15px;
-    height: 15px;
-    opacity: .7;
-    transition: .3s;
-  }
-
-  &__title {
-    font-family: Gagalin;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-  }
-
-  &__content {
-    font-family: Ubuntu;
-    font-weight: 300;
-    font-size: 14px;
-  }
-}
-
-.popup {
-  display: none;
-}
-
-.status-popup {
-  width: 240px;
-
-  &__inner {
-    padding: 20px;
-    text-align: center;
-  }
-
-  &__message {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-}
-
-.error-message {
-  color: $red;
 }
 
 ul {

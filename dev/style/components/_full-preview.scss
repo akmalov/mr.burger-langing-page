@@ -1,0 +1,30 @@
+.full-review {
+  position: relative;
+  padding: 25px 20px;
+
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    opacity: .7;
+    transition: .3s;
+  }
+
+  &__title {
+    font-family: Gagalin;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

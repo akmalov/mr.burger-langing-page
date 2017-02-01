@@ -1,0 +1,21 @@
+.popup {
+  display: none;
+}
+
+.status-popup {
+  width: 240px;
+
+  &__inner {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__message {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.error-message {
+  color: $red;
+}
