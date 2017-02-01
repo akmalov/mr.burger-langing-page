@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = [
-  './dev/js/main.js'
+  './dev/js/slider.js'
 ];

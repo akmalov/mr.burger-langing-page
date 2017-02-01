@@ -3,7 +3,7 @@
 module.exports = function() {
     $.gulp.task('js:process', function() {
         return $.browserify({
-            entries: $.path.app,
+            entries: $.path.mainjs,
             debug: true
         })
             .transform($.babel, {presets: ["es2015"]})

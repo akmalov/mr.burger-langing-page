@@ -75,6 +75,10 @@ body {
   background: $orange;
   padding: 3px 16px;
   border-radius: 5px;
+
+  &:hover {
+    background: darken($orange, 10%);
+  }
 }
 
 .section__title {

@@ -1,25 +1,3 @@
-//slider//
-
-$(function () {
-    var burgerCarousel = $('.burgers__slider__list').owlCarousel({
-        items : 1,
-        nav : true,
-        navContainer: $('.burgers__slider__controls'),
-        navText: ['', ''],
-        loop: true
-    });
-
-    $('.burgers__slider__btn_right').on('click', function(e) {
-        e.preventDefault();
-        burgerCarousel.trigger('next.owl.carousel');
-    });
-
-    $('.burgers__slider__btn_left').on('click', function(e) {
-        e.preventDefault();
-        burgerCarousel.trigger('prev.owl.carousel');
-    });
-});
-
 //vertical accordion//
 
 $(function () {
