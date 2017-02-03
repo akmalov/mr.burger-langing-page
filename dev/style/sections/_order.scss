@@ -98,6 +98,10 @@
       padding-right: 0;
       text-transform: none;
       background: transparent;
+
+      &:hover {
+        background: transparent;
+      }
     }
   }
 

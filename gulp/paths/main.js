@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = [
+    './dev/js/one-page-scroll.js',
     './dev/js/slider.js',
     './dev/js/team.js',
     './dev/js/menu.js',
