@@ -15,7 +15,7 @@ ymaps.ready(function () {
             iconLayout: 'default#image',
             iconImageHref: 'img/icons/map-marker.svg',
             iconImageSize: [46, 58],
-            iconImageOffset: [-3, -42]
+            iconImageOffset: [-22, -57]
         }),
 
         myPlacemark2 = new ymaps.Placemark([59.9584,30.3024], {
@@ -25,7 +25,7 @@ ymaps.ready(function () {
             iconLayout: 'default#image',
             iconImageHref: 'img/icons/map-marker.svg',
             iconImageSize: [46, 58],
-            iconImageOffset: [-3, -42]
+            iconImageOffset: [-22, -57]
         }),
 
         myPlacemark3 = new ymaps.Placemark([59.9592,30.4193], {
@@ -35,7 +35,7 @@ ymaps.ready(function () {
             iconLayout: 'default#image',
             iconImageHref: 'img/icons/map-marker.svg',
             iconImageSize: [46, 58],
-            iconImageOffset: [-3, -42]
+            iconImageOffset: [-22, -57]
         });
     myMap.geoObjects.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3);
     myMap.behaviors.disable('scrollZoom');

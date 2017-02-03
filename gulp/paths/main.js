@@ -6,5 +6,6 @@ module.exports = [
     './dev/js/menu.js',
     './dev/js/fancybox.js',
     './dev/js/input-mask.js',
-    './dev/js/form.js'
+    './dev/js/form.js',
+    './dev/js/map.js'
 ];
