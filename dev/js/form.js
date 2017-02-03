@@ -1,5 +1,5 @@
 $(function(){
-    $('#order-form').on('submit', function(e){
+    $('#form-order').on('submit', function(e){
         e.preventDefault();
 
         var

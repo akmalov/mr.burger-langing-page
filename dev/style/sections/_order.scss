@@ -1,9 +1,5 @@
 .order {
-  background: url("../../img/bg/order.jpg") 50% / cover no-repeat;
-
-  .section__title {
-    text-align: center;
-  }
+  background: url("../img/bg/order.jpg") 50% / cover no-repeat;
 
   .container {
     position: relative;
@@ -11,86 +7,97 @@
     transform: translateY(-50%);
   }
 
-  &__form {
+  &__form-wrapper {
     margin-left: -5%;
     @extend %clearfix;
+  }
+}
 
-    &-col {
-      float: left;
-      width: 45%;
-      margin-left: 5%;
-    }
+.section__title_order {
+  text-align: center;
+}
 
-    &-row {
-      margin-bottom: 16px;
-      @extend %clearfix;
+.form-order {
 
-      &_double {
-        margin-left: -20px;
+  &__col {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+  }
 
-        .order__form-block {
-          float: left;
-          width: calc(100% / 2 - 20px);
-          margin-left: 20px;
-        }
-      }
+  &__row {
+    margin-bottom: 16px;
+    @extend %clearfix;
 
-      &_quatro {
-        margin-left: -20px;
+    &_2 {
+      margin-left: -20px;
 
-        .order__form-block {
-          float: left;
-          width: calc(100% / 4 - 20px);
-          margin-left: 20px;
-        }
+      .form-order__block {
+        float: left;
+        width: calc(100% / 2 - 20px);
+        margin-left: 20px;
       }
     }
 
-    &-label {
-      margin-bottom: 17px;
-      font-family: Ubuntu;
-      font-weight: 400;
-      color: #fff;
-      font-size: 14px;
-    }
+    &_4 {
+      margin-left: -20px;
 
-    &-input {
-      font-size: 14px;
-      padding: 5px 10px;
-      border: 1px solid #d1cfcb;
-      border-radius: 5px;
-      width: 100%;
-
-      &_textarea {
-        height: 110px;
+      .form-order__block {
+        float: left;
+        width: calc(100% / 4 - 20px);
+        margin-left: 20px;
       }
     }
+  }
 
-    &-block {
-      display: block;
+  &__block {
+    display: block;
+  }
+
+  &__label {
+    margin-bottom: 17px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  &__input {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #d1cfcb;
+    border-radius: 5px;
+    width: 100%;
+
+    &_textarea {
+      height: 110px;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    border: 0;
+    background: $red;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($orange, 10%);
     }
 
-    &-button {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 20px;
-      border: 0;
-      background: $red;
-      font-size: 13px;
-      text-transform: uppercase;
-      border-radius: 5px;
-      color: #ffffff;
-      font-family: Ubuntu;
-      font-weight: 500;
-      padding: 10px 15px;
-      cursor: pointer;
-
-      &_reset {
-        padding-left: 0;
-        padding-right: 0;
-        text-transform: none;
-        background: transparent;
-      }
+    &_reset {
+      padding-left: 0;
+      padding-right: 0;
+      text-transform: none;
+      background: transparent;
     }
   }
 
@@ -108,7 +115,7 @@
       left: -9999px;
 
       &:checked {
-        & + .order__radio-fake {
+        & + .form-order__radio-fake {
 
           &:after {
             width: 8px;
@@ -151,23 +158,23 @@
     }
 
     &_checkbox {
-      .order__radio-fake {
+      .form-order__radio-fake {
         border-radius: 0;
       }
 
-      .order__radio-elem {
-        & + .order__radio-fake {
+      .form-order__radio-elem {
+        & + .form-order__radio-fake {
           &:after {
             background: transparent;
           }
         }
       }
 
-      .order__radio-elem:checked {
-        & + .order__radio-fake {
+      .form-order__radio-elem:checked {
+        & + .form-order__radio-fake {
 
           &:after {
-            background: url("../../img/icons/check.svg") 50% no-repeat transparent;
+            background: url("../img/icons/check.svg") 50% no-repeat transparent;
             background-size: contain;
             width: 11px;
             height: 9px;
