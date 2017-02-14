@@ -36,7 +36,7 @@
 
   @for $i from 0 to 8 {
     .review__photo-#{$i + 1} {
-      background-image: url('../../img/content/reviews-#{$i + 1}.jpg');
+      background-image: url('../img/content/reviews-#{$i + 1}.jpg');
     }
   }
 
