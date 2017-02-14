@@ -5,7 +5,11 @@
     float: left;
     width: 9.574468085106383%;
 
-    &-img {
+    &-title {
+      text-indent: -9999px;
+    }
+
+    &-image {
       display: block;
       width: 90px;
       height: 69px;

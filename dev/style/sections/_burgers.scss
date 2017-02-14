@@ -1,7 +1,7 @@
 .burgers {
   font-size: 0;
   background: #f9b43b;
-  background: ( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background: linear-gradient(90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
 
   .container {
     @extend %vertical-middle;

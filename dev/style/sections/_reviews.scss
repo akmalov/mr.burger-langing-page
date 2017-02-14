@@ -1,5 +1,9 @@
 .reviews {
 
+  &__title {
+    display: none;
+  }
+
   &__list {
     @extend %clearfix;
     height: 100%;
