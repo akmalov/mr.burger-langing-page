@@ -14,7 +14,7 @@ This site created at online educational courses "Web for beginners" at "Loftscho
 
 #How to install this project
 
-1. **git clone git@github.com:akmalov/site-portfolio.git**      _`clone repository from GitHub to your computer`_
+1. **git clone git@github.com:akmalov/mr.burger-langing-page.git**      _`clone repository from GitHub to your computer`_
 2. **cd site**      _`change work directory to cloned repository`_
 3. **npm install gulpjs/gulp-cli -g**      _`install Gulp 4 globally`_
 4. **npm install**      _`download and install plugins by node package manager`_
